@@ -1,2 +1,1 @@
-# Agileo Oy: Spring Framework (2015-06-15)
-
+# Agileo Oy: Spring Framework 15.-17.6.2015
