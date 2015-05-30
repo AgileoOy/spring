@@ -1,0 +1,46 @@
+body {
+	font-family: sans-serif;
+	font-weight: lighter;
+}
+
+#coursetitle {
+	letter-spacing:5px;
+	color:#aaaaaa;
+	font-weight: lighter;
+}
+
+.companylogo{
+	color: #4A72B0;	
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+h2 {
+	color: #555555;
+	font-weight: normal;
+	letter-spacing:2px;
+}
+h3 {
+	font-weight: normal;
+	letter-spacing:1px;
+}
+
+a {
+	color: #4A72B0;
+}
+
+#contentbox {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #FCFCFC;
+	border-color: #555555;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}

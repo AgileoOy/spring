@@ -1,0 +1,43 @@
+body{
+		background-color: #F8F8F8;
+}
+p {
+	line-height: 30px;
+}
+a {
+	background-color: #333333;
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 10px;
+	margin: 0px;
+	color: #EEEEEE;
+	font-weight: bold;
+	font-family: Verdana;
+	text-decoration: none;
+}
+#kirjoitettu {
+	background-color: #FFFFFF;
+	border-color: #333333;
+	border-width: 1px;
+	border-style: solid;
+	padding: 10px;
+	color: #333333;
+	font-family: Verdana;
+	text-align: left;
+	height:30px
+}
+.Tyhjenna {
+	background-color: #555555;
+	border-color: #444444;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: small;
+}
+.Keskitetty {
+	text-align: center;
+	vertical-align: center;
+}
