@@ -1,0 +1,71 @@
+body{
+	font-family: sans-serif;
+	background-color: #F3F3F3;
+}
+input {
+	border: 1px;
+	border-color: black;
+	border-style: solid;
+	background-color: white;
+	color: black;
+	width: 100%
+}
+button {
+	border: 3px;
+	border-color: #333333;
+	color: #333333;
+	background: #EEFFEE;
+	width: 100%;
+	font-weight: bold;
+	font-size: large;
+	border-style: solid;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	vertical-align: middle;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+p.Viesti {
+	color: green;
+}
+p.Virhe {
+	color: red;
+}
+td {
+	padding: 6px;
+}
+#register {
+	border: 2px;
+	border-color: #333333;
+	border-style: dotted;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: left;
+	margin: 20px;
+	background-color: #FFFFFF;
+}
+#login {
+	border: 2px;
+	border-color: #333333;
+	border-style: solid;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: left;
+	margin: 20px;
+	background-color: #E3E3E3;
+	color: #000000
+}
