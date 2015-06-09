@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="auto" class="fi.agileo.spring.e12.Auto" scope="prototype">
+		<property name="nimi" value="mersu"/>
+		<property name="jalat">
+			<list>
+				<ref bean="rengas1"/>
+				<ref bean="rengas2"/>
+				<ref bean="rengas3"/>
+				<ref bean="suksi1"/>
+			</list>
+		</property>
+	</bean>
+	<bean id="rengas1" class="fi.agileo.spring.e12.Rengas" scope="prototype">
+		<property name="numero" value="1"/>
+	</bean>
+	<bean id="rengas2" class="fi.agileo.spring.e12.Rengas" scope="prototype">
+		<property name="numero" value="2"/>
+	</bean>
+	<bean id="rengas3" class="fi.agileo.spring.e12.Rengas" scope="prototype">
+		<property name="numero" value="3"/>
+	</bean>
+	<bean id="rengas4" class="fi.agileo.spring.e12.Rengas" scope="prototype">
+		<property name="numero" value="4"/>
+	</bean>
+	
+	<bean id="suksi1" class="fi.agileo.spring.e12.Suksi" scope="prototype">
+		<property name="numero" value="1"/>
+	</bean>
+	
+</beans>
