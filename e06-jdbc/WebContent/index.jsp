@@ -10,7 +10,7 @@
 <body>
 <h1><a href="http://agileo.fi" class="companylogo">Agileo<img src="images/agileo_logo.png" alt="Agileo"/></a></h1>
 <h1 id="coursetitle">Spring Framework</h1>
-<h2>Esimerkki 5</h2>
+<h2>Esimerkki 6</h2>
 
 <div id="contentbox">
 <h3>Sisältö</h3>
