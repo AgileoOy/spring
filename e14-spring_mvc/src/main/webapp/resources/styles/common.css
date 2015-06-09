@@ -1,0 +1,29 @@
+body {
+	font-family: Verdana;
+}
+
+h1 {
+	color: #555555;
+}
+
+h2 {
+	color: #555555;
+}
+
+a {
+	color: #3388FF;
+}
+
+#contentbox {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #FCFCFC;
+	border-color: #333333;
+	border-width: 1px;
+	border-style: dashed;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
