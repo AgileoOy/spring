@@ -1,4 +1,4 @@
-package fi.softala.jee.demo.d05;
+package fi.agileo.spring.e05;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
