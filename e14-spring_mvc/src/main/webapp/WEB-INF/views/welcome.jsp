@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="resources/styles/common.css">
 </head>
 <body>
-<h1><a href="http://agileo.fi" class="companylogo">Agileo<img src="images/agileo_logo.png" alt="Agileo"/></a></h1>
+<h1><a href="http://agileo.fi" class="companylogo">Agileo<img src="resources/images/agileo_logo.png" alt="Agileo"/></a></h1>
 <h1 id="coursetitle">Spring Framework</h1>
 <h2>Esimerkki 14</h2>
 
