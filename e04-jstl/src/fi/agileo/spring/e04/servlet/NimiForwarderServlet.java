@@ -1,5 +1,4 @@
-package fi.softala.jee.demo.d04.servlet;
-
+package fi.agileo.spring.e04.servlet;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,7 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fi.softala.jee.demo.d04.bean.Henkilo;
+import fi.agileo.spring.e04.bean.Henkilo;
 
 /**
  * Servlet implementation class NimiForwarderServlet

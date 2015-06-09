@@ -1,4 +1,4 @@
-package fi.softala.jee.demo.d04.bean;
+package fi.agileo.spring.e04.bean;
 
 public class Henkilo {
 	
