@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:sec="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<!-- SPRING MVC MÄÄRITYKSET -->
+
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+
+	<!-- Scans the classpath of this application for @Components to deploy as 
+		beans -->
+	<context:component-scan base-package="fi.agileo.spring.e16" />
+	<!-- Configures the @Controller programming model -->
+	<mvc:annotation-driven />
+
+	<!-- Forwards requests to the "/" resource to the "welcome" view -->
+	<mvc:view-controller path="/" view-name="welcome" />
+
+	<!-- Resolves view names to protected .jsp resources within the /WEB-INF/views 
+		directory -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<!-- DATA SOURCE -->
+	
+	<context:property-placeholder location="classpath*:/db_connection.properties" />
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${db.driver}" />
+		<property name="url" value="${db.url}" />
+		<property name="username" value="${db.username}" />
+		<property name="password" value="${db.password}" />
+	</bean>
+	
+	
+	<!-- SPRING SECURITY -->
+
+	<sec:http auto-config="true" use-expressions="true">
+		
+		<sec:intercept-url pattern="/secure/admin/**" access="hasRole('ROLE_ADMIN')" />
+		<sec:intercept-url pattern="/secure/*" access="isAuthenticated()" />
+		<sec:intercept-url pattern="/*" access="permitAll" />
+
+		<sec:form-login
+			login-page="/loginpage"
+			default-target-url="/secure/main"
+			authentication-failure-url="/loginfail" />
+			
+		<sec:logout logout-success-url="/logout" />
+		
+	</sec:http>
+	
+	<bean id="encoder" class="org.springframework.security.crypto.password.StandardPasswordEncoder" />
+
+
+	<sec:authentication-manager>
+		<sec:authentication-provider>
+			<sec:password-encoder ref="encoder" />
+			<sec:jdbc-user-service data-source-ref="dataSource"
+				users-by-username-query="select username, password_encrypted, enabled from webuser2 where username=? and enabled = 1"
+				authorities-by-username-query="select u.username, a.role from webuser2 u JOIN webuser2_authority ua ON (u.id = ua.webuser2_id) JOIN authority a ON (a.id = ua.authority_id) WHERE u.username = ?" />
+		</sec:authentication-provider>
+	</sec:authentication-manager>
+
+	<!-- USER DEFINITIONS BY XML
+	
+	 <sec:authentication-manager>
+			<sec:authentication-provider>
+				<sec:user-service>
+					<sec:user name="user" password="userpassu" authorities="ROLE_USER" />
+					<sec:user name="admin" password="adminpassu" authorities="ROLE_ADMIN" />
+				</sec:user-service>
+			</sec:authentication-provider>
+		</sec:authentication-manager>
+	-->
+
+
+	<sec:global-method-security pre-post-annotations="enabled" />
+
+
+</beans>
