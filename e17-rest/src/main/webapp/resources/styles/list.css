@@ -1,0 +1,46 @@
+.Olio {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	background-color: #FCFCFC;
+	border-color: #333333;
+	border-width: 1px;
+	border-style: dashed;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin: 5px;
+	float: left;
+}
+h2 {
+	font-size: 18px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+p {
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+.Error {
+	color: red;
+}
+button {
+	border-color: #333333;
+	border-width: 2px;
+	border-style: solid;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+#latausnappi {
+	background-color: #F0FFF0;
+}
+#tyhjennysnappi {
+	background-color: #FFF0F0;
+}
