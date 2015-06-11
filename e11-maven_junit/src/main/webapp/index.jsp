@@ -4,13 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Java EE - Demo 11</title>
+<title>Spring Esimerkki 11</title>
 <link rel="stylesheet" type="text/css" href="styles/common.css">
 </head>
 <body>
-	<img src="images/hh_logo.jpg" alt="HAAGA-HELIA" />
-	<h1>Java EE</h1>
-	<h2>DEMO 11</h2>
+<h1><a href="http://agileo.fi" class="companylogo">Agileo<img src="images/agileo_logo.png" alt="Agileo"/></a></h1>
+<h1 id="coursetitle">Spring Framework</h1>
+<h2>Esimerkki 11</h2>
+
 	<div id="contentbox">
 		<h3>Sisältö</h3>
 		<ul>

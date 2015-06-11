@@ -62,7 +62,9 @@ button {
 	width: 100%;
 	border-radius: 20px;
 	vertical-align: middle;
-	padding: 0px;
+	padding-left: 7px;
+	padding-right: 7px;
+	cursor: pointer;
 }
 
 input {
