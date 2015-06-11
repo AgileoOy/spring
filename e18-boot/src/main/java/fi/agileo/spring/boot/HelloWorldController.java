@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @EnableAutoConfiguration
 public class HelloWorldController {
 
-	@RequestMapping("/helloworld")
+	@RequestMapping("/")
 	@ResponseBody
 	public String helloWorld() {
 		return "<!DOCTYPE html>\n<html><body>Hello World!</body></html>";
