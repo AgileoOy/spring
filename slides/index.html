@@ -51,9 +51,9 @@
 					<h1>Aikataulu</h1>
 					<table>
 						<tr><td>&nbsp;</td><td>AP</td><td>IP</td></tr>
-						<tr><td>MA</td><td><b>Web</b></td><td><b>Mvn</b></td></tr>
-						<tr><td>TI</td><td><b>Spring</b></td><td><b>Mvc</b></td></tr>
-						<tr><td>KE</td><td><b>Sec</b></td><td><b>Adv</b></td></tr>
+						<tr><td>MA</td><td><b>WEB</b></td><td><b>MVN</b></td></tr>
+						<tr><td>TI</td><td><b>SPR</b></td><td><b>MVC</b></td></tr>
+						<tr><td>KE</td><td><b>SEC</b></td><td><b>SDV</b></td></tr>
 					</table>
 				</section>
 
@@ -70,7 +70,7 @@
 					</ul>
 				</section>
 				<section data-background="#FFDDFF">
-					<h1>MA-IP : Mvn</h1>
+					<h1>MA-IP : MVN</h1>
 					<ul>
 						<li>Design Patterns</li>
 						<li>JDBC</li>
@@ -82,7 +82,7 @@
 					</ul>
 				</section>
 				<section data-background="#DDFFDD">
-					<h1>TI-AP : Spring</h1>
+					<h1>TI-AP : SPR</h1>
 					<ul>
 						<li>Inversion of Control</li>
 						<li>Dependency Injection</li>
@@ -117,7 +117,7 @@
 					</ul>
 				</section>
 				<section data-background="#DDFFFF">
-					<h1>KE-IP : Adv</h1>
+					<h1>KE-IP : ADV</h1>
 					<ul>
 						<li>Spring Rest</li>
 						<li>Spring Boot</li>
@@ -129,6 +129,96 @@
 					<h2>Esimerkkisovelluksia</h2>
 					<p><b><a href="https://github.com/agileooy/spring.git">https://github.com/agileooy/spring.git</a></b></p>
 					<p><small><a href="http://tiny.cc/agileospring">tiny.cc/agileospring</a></small></p>
+				</section>
+				<section>
+					<h3>Eclipse ja Tomcat kuntoon</h3>
+					<ol>
+					<li><a href="http://www.eclipse.org/downloads/">Lataa Eclipse Luna (versio: IDE for Java EE developers)</a></li>
+					<li><a href="http://www.nic.funet.fi/pub/mirrors/apache.org/tomcat/tomcat-7/v7.0.57/bin/apache-tomcat-7.0.57.zip">Lataa Tomcat 7</a></li>
+					<li>Pura Eclipsen zip-paketti</li>
+					<li>Pura Tomcatin zip-paketti</li>
+					<li>Avaa Eclipse</li>
+					<li>Lisää Java EE-perspektiivissä Servers-välilehdelle uusi palvelin (mallia Tomcat 7).<br>
+					<small>Huom! Tee tämä ennen kuin tuot demoprojektit Eclipseen.<br>
+					<code style="color:#777777;">File -> New -> Server -> Tomcat 7</code><br>
+					<i>Valitse Tomcatin asennushakemistoksi juuri purkamasi tomcat-kansio.</i></small></li>
+				</ol>
+			</section>
+			<section>
+				<ol>
+					<h3>Esimerkkiprojektit Eclipseen</h3>
+					<li>Fork repo @ Github<br>
+					<small>Luo oma Github-tunnus osoitteessa <a href="https://github.com/join">https://github.com/join</a><br>
+					Mene osoitteeseen <a href="https://github.com/agileooy/spring">https://github.com/agileooy/spring</a> ja paina Fork</i></small></li>
+					<li>Tuo demoprojektit Eclipseen<br>
+					<small><code style="color:#777777;">File -> Import -> Git -> Projects From Git -> Clone URI -> URI: https://github.com/omatunnari/spring.git -> Import existing projects -> Select All -> Finish</code></small></li>
+					<li>Avaa ssh-tunneli tietokantapalvelimelle,<br>
+					mikäli sovellus käyttää tietokantaa<br>
+					<small>Linux & OS X: <code style="color:#777777;">ssh -L 3306:localhost:3306 yourusername@dbserveripaddress</code><br>
+					Windows + Putty: <a href="http://tiny.cc/puttytunnel">http://tiny.cc/puttytunnel</a></small></li>
+					<li>Lisää webbiprojekti Tomcat-palvelimelle</li>
+					<li>Käynnistä Tomcat</li>
+					<li>Avaa selain webbiprojektin aloitussivulle<br>
+					<small><a href="http://localhost:8080/projectname">http://localhost:8080/projectname</a></small></li>
+					</ol>
+				</section>
+				<section data-background="#FAFAFA">
+					<h3>Uuden Webbiprojektin luominen</h3>
+<pre style="padding:20px; background-color:#FFFFFF;">
+1. Valitse Java EE -perspektiivi
+Window -> Open Perspective -> Java EE (default)
+
+2. Luo uusi projekti
+File -> New -> Dynamic Web Project
+(Target Runtime: Apache Tomcat 7.0)
+
+3. Luo testisivu projektiin
+File -> New -> JSP File
+
+Valitse tiedoston sijainniksi projektisi WebContent-hakemisto
+Anna tiedostolle nimeksi index.jsp
+Kirjoita body-tagien sisään sana "testisivu".
+4. Käynnistä projekti palvelimella
+[Select Project]
+Run -> Run as... -> Run on Server -> Tomcat -> Finish
+
+5. Avaa ulkoinen selain
+Kopioi Eclipsen sisäisestä selain-ikkunasta webbisovelluksesi osoite
+ulkoisen selaimen osoitekenttään (esim. Chrome) ja lataa sivu
+uudestaan ulkoisella selaimella.
+</pre>
+				</section>
+				<section data-background="#FAFAFA">
+					<h3>Uuden Maven-projektin luominen</h3>
+<pre style="padding:20px; background-color:#000000; color:#FFFFFF;">
+New Maven Project->
+
+[x] Create a simple project (skip archetype selection)
+Next->
+
+Group Id: fi.yritys.sovellus
+Artifact Id: projektin-nimi
+Packaging: jar (komentoriviprojekteille), war (webbiprojekteille)
+Name: Projektin nimi
+Description: Projektin pidempi kuvaus
+Finish
+
+Avaa pom.xml
+Määrittele kirjastoriippuvuudet
+Voit käyttää dependencyjen määrittelemisessä apuna hakukonetta:
+http://mvnrepository.com
+</pre>
+				</section>
+				<section>
+					<h2>Materiaalia</h2>
+					<ul>
+						<li><a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/">Spring Reference</a><img src="http://www.manning.com/walls4/walls4_cover150.jpg" style="margin:50px; float:right;border:0px;"></li>
+					<li><a href="http://spring.io/guides">Spring Guides</a></li>
+					<li><a href="http://www.mkyong.com/tutorials/spring-tutorials/">Mkyong</a></li>
+					<li><a href="http://www.tutorialspoint.com/spring/">Tutorials Point</a></li>
+					<li><a href="http://www.javatpoint.com/spring-tutorial">JavaTpoint</a></li>
+					<li><a href="http://owasptop10.googlecode.com/files/OWASP%20Top%2010%20-%202013.pdf">OWASP TOP 10</li>
+				</ul>
 				</section>
 			</div>
 
