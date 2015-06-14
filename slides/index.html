@@ -57,15 +57,26 @@
 					</p>
 					</div>
 				</section>
+				<section data-background="#EEEEEE">
+					<h2>TODO</h2>
+<pre style="padding:50px; background:#FFFFFF;width:400px;">
+Teoria
+Esimerkkisovelluksia      20 kpl
+Monivalintatehtäviä      100 kpl
+Ohjelmointiharjoituksia    6 kpl
+Ohjelmointiprojekteja      3 kpl
+</pre>
+				</section>
 				<section data-background="#FFFFFF">
-					<h1>WORKFLOW</h1>
-					<ol>
-						<li>THEORY</li>
-						<li>EXAMPLE</li>
-						<li>CHECKLIST</li>
-						<li>PROGRAMMING</li>
-					</ol>
-
+					<h2>Materiaalia</h2>
+					<ul style="list-style-type: square;">
+						<li><a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/">Spring Reference</a><img src="http://www.manning.com/walls4/walls4_cover150.jpg" style="margin:50px; float:right;border:0px;"></li>
+					<li><a href="http://spring.io/guides">Spring Guides</a></li>
+					<li><a href="http://www.mkyong.com/tutorials/spring-tutorials/">Mkyong</a></li>
+					<li><a href="http://www.tutorialspoint.com/spring/">Tutorials Point</a></li>
+					<li><a href="http://www.javatpoint.com/spring-tutorial">JavaTpoint</a></li>
+					<li><a href="http://owasptop10.googlecode.com/files/OWASP%20Top%2010%20-%202013.pdf">OWASP TOP 10</a></li>
+				</ul>
 				</section>
 				<section data-background="#DDFFFF">
 					<h1>Aikataulu</h1>
@@ -87,18 +98,17 @@
 						<li>Form</li>
 						<li>JSTL</li>
 						<li>Session</li>
+						<li>Design Patterns</li>
+						<li>JDBC</li>
 					</ul>
 				</section>
 				<section data-background="#FFDDFF">
 					<h1>MA-IP : MVN</h1>
 					<ul>
-						<li>Design Patterns</li>
-						<li>JDBC</li>
 						<li>Maven</li>
 						<li>Junit</li>
 						<li>Mock</li>
 						<li>TDD</li>
-						<li>Frameworks</li>
 					</ul>
 				</section>
 				<section data-background="#DDFFDD">
@@ -118,11 +128,12 @@
 					<ul>
 						<li>Spring Web MVC</li>
 						<li>Dispatcher Servlet</li>
-						<li>Servlet Context</li>
 						<li>Request Mapping</li>
-						<li>Autowiring</li>
 						<li>Model Attribute</li>
 						<li>Path Variables</li>
+						<li>Autowiring</li>
+						<li>Internationalization</li>
+						<li>Bean Validation</li>
 					</ul>
 				</section>
 				<section data-background="#DDDDFF">
@@ -150,7 +161,7 @@
 					<p><b><a href="https://github.com/agileooy/spring.git">https://github.com/agileooy/spring.git</a></b></p>
 					<p><small><a href="http://tiny.cc/agileospring">tiny.cc/agileospring</a></small></p>
 				</section>
-				<section>
+				<section data-background="#EEFFEE">
 					<h3>Eclipse ja Tomcat kuntoon</h3>
 					<ol>
 					<li><a href="http://www.eclipse.org/downloads/">Lataa Eclipse Luna (versio: IDE for Java EE developers)</a></li>
@@ -164,7 +175,7 @@
 					<i>Valitse Tomcatin asennushakemistoksi juuri purkamasi tomcat-kansio.</i></small></li>
 				</ol>
 			</section>
-			<section>
+			<section data-background="#FFFFEE">
 				<ol>
 					<h3>Esimerkkiprojektit Eclipseen</h3>
 					<li>Fork repo @ Github<br>
@@ -181,6 +192,30 @@
 					<li>Avaa selain webbiprojektin aloitussivulle<br>
 					<small><a href="http://localhost:8080/projectname">http://localhost:8080/projectname</a></small></li>
 					</ol>
+				</section>
+				<section>
+					<h1>Java Web Apps</h1>
+					<p>Teoria</p>
+					<p>Esimerkkisovellukset e01-e10</p>
+					<p>Monivalinnat</p>
+				</section>
+				<section data-background="#444444">
+					<h4 style="color:#EEEEEE;">Ohjelmointiharjoitus 1:</h4>
+					<h2 style="color:#EEEEEE;">Web & DB</h2>
+					<p style="color:#EEEEEE;">Laajenna esimerkkisovellus 8 sellaiseksi, että käyttöliittymästä käsin käyttäjä voi myös poistaa tietokannan taulun yksittäisiä rivejä.</p>
+				</section>
+				<section>
+					<h1>Maven & JUnit</h1>
+					<p>Teoria</p>
+					<p>Esimerkkisovellus e11</p>
+					<p>Monivalinnat</p>
+				</section>
+				<section data-background="#444444">
+					<h4 style="color:#EEEEEE;">Ohjelmointiharjoitus 2:</h4>
+					<h2 style="color:#EEEEEE;">Yksikkötestaus</h2>
+					<p style="color:#EEEEEE; font-size:30px;">Lisää kellosovellukseen luokka GmtIsoKello, jonka tarkoitus on näyttää päiväys ja kellonaika Greenwich Mean Time -aikavyöhykkeltä ISO-standardin mukaisesti. Esim. PVM: 2014-01-31, AIKA: 15:30:58.</p>
+					<p style="color:#EEEEEE; font-size:30px;">Ennen kuin ohjelmoit toiminnallisuuden kokonaan, tee testiluokka GmtIsoKelloTest, joka testaa MockKelloLahde-luokan avulla, että aikavyöhyke ja muotoilu toimii määritysten mukaisesti. Lisää koodaamasi testiluokka AllTests-testisuiteen ja kokeile, että uudet testit eivät mene läpi suitea ajettaessa.</p>
+					<p style="color:#EEEEEE; font-size:30px;">Ohjelmoi lopulta myös GmtIsoKello-luokan toiminnallisuus valmiiksi ja totea suitella, että kaikki toiminnallisuudet ovat valmiita. Muuta KelloServlet vielä lopuksi käyttämään GmtIsoKelloa InternetKelloLahteella.</p>
 				</section>
 				<section data-background="#FAFAFA">
 					<h3>Uuden Webbiprojektin luominen</h3>
@@ -229,16 +264,76 @@ Voit käyttää dependencyjen määrittelemisessä apuna hakukonetta:
 http://mvnrepository.com
 </pre>
 				</section>
+				<section data-background="#FFFFFF">
+					<h4>Ohjelmointiprojekti A:</h4>
+					<h2>Perinteinen webbisovellus Mavenilla</h2>
+					<p>Tee CRUD-käyttöliittymä valitsemastasi aiheesta.</p>
+					<p>Esimerkkiaiheita: ostoslista, todo, äänilevyarkisto,...</p>
+					<p style="color:#888888;">LISÄTEHTÄVÄ: Selenium-testit</p>
+				</section>
 				<section>
-					<h2>Materiaalia</h2>
-					<ul style="list-style-type: square;">
-						<li><a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/">Spring Reference</a><img src="http://www.manning.com/walls4/walls4_cover150.jpg" style="margin:50px; float:right;border:0px;"></li>
-					<li><a href="http://spring.io/guides">Spring Guides</a></li>
-					<li><a href="http://www.mkyong.com/tutorials/spring-tutorials/">Mkyong</a></li>
-					<li><a href="http://www.tutorialspoint.com/spring/">Tutorials Point</a></li>
-					<li><a href="http://www.javatpoint.com/spring-tutorial">JavaTpoint</a></li>
-					<li><a href="http://owasptop10.googlecode.com/files/OWASP%20Top%2010%20-%202013.pdf">OWASP TOP 10</a></li>
-				</ul>
+					<h1>Spring</h1>
+					<p>Teoria</p>
+					<p>Esimerkkisovellukset e12, e13</p>
+					<p>Monivalinnat</p>
+				</section>
+				<section data-background="#444444">
+					<h4 style="color:#EEEEEE;">Ohjelmointiharjoitus 3:</h4>
+					<h2 style="color:#EEEEEE;">Spring JDBC</h2>
+					<p style="color:#EEEEEE;">Tee sovellus, joka hakee Spring JDBC:tä käyttäen komentoriville sen tietokannan taulun sisällön, jonka loit ohjelmointiprojektia A varten.</p>
+				</section>
+				<section>
+					<h1>Spring Web MVC</h1>
+					<p>Teoria</p>
+					<p>Esimerkkisovellus e14</p>
+					<p>Monivalinnat</p>
+				</section>
+				<section data-background="#444444">
+					<h4 style="color:#EEEEEE;">Ohjelmointiharjoitus 4:</h4>
+					<h2 style="color:#EEEEEE;">Spring Web MVC</h2>
+					<p style="color:#EEEEEE;">Tee 14. esimerkkisovellukseen uusi sivu, jonka avulla voi listata kannasta löytyviä käyttäjiä. Konfiguroi sivu löytymään osoitteesta /e14/henkilot/lista.</p>
+				</section>
+				<section>
+					<h1>I18n & Bean Validation</h1>
+					<p>Teoria</p>
+					<p>Esimerkkisovellus e15</p>
+					<p>Monivalinnat</p>
+				</section>
+				<section data-background="#444444">
+					<h4 style="color:#EEEEEE;">Ohjelmointiharjoitus 5:</h4>
+					<h2 style="color:#EEEEEE;">Validointi</h2>
+					<p style="color:#EEEEEE;">Tee 15. esimerkkisovellukseen uusi validaattori kenttiin etunimi, sukunimi ja lahiosoite tarkastamaan, että merkkijono alkaa isolla kirjaimella. Toteuta validointi uudella annotaatiolla, jonka nimi on @AlkaaIsollaKirjaimella.</p>
+				</section>
+				<section data-background="#FFFFFF">
+					<h4>Ohjelmointiprojekti B:</h4>
+					<h2>Webbisovellus Spring Web MVC:llä</h2>
+					<p>Tee CRUD-käyttöliittymä valitsemastasi aiheesta.</p>
+					<p>Esimerkkiaiheita: ostoslista, todo, äänilevyarkisto,...</p>
+					<p style="color:#888888;">LISÄTEHTÄVÄ: Spring Test</p>
+				</section>
+				<section>
+					<h1>Spring Security</h1>
+					<p>Teoria</p>
+					<p>Esimerkkisovellus e16</p>
+					<p>Monivalinnat</p>
+				</section>
+				<section data-background="#444444">
+					<h4 style="color:#EEEEEE;">Ohjelmointiharjoitus 6:</h4>
+					<h2 style="color:#EEEEEE;">Spring Security</h2>
+					<p style="color:#EEEEEE;">Luo tietokantaan uusi käyttäjä, jonka käyttäjätunnus on koko nimesi (yhteen kirjoitettuna pienellä ilman välilyöntejä, väliviivoja ja skandeja esim. Maija Meikäläinen-Smith -> maijameikalainensmith) ja salasanaksi samainen tekstinpätkä. Aseta käyttäjälle rooli ROLE_USER. Aseta käyttäjälle myös etunimesi ja sukunimesi.</p>
+				</section>
+				<section>
+					<h1>Advanced Spring</h1>
+					<p>Teoria</p>
+					<p>Esimerkkisovellukset e17-e20</p>
+					<p>Monivalinnat</p>
+				</section>
+				<section data-background="#FFFFFF">
+					<h4>Ohjelmointiprojekti C:</h4>
+					<h2>Yhden sivun webbisovellus Spring REST:llä</h2>
+					<p>Tee CRUD-käyttöliittymä valitsemastasi aiheesta.</p>
+					<p>Esimerkkiaiheita: ostoslista, todo, äänilevyarkisto,...</p>
+					<p style="color:#888888;">LISÄTEHTÄVÄ: JQuery Front End</p>
 				</section>
 				<section data-background="#000000">
 					<h2 style="color:#888888;">Kurssipalaute</h2>
