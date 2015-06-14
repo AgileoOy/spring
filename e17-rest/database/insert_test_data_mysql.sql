@@ -1,5 +1,3 @@
--- MUISTA! console encoding latin1
-
 INSERT INTO henkilo2
 	(etunimi, sukunimi, sahkoposti, lahiosoite, postinumero, postitoimipaikka)
 values
