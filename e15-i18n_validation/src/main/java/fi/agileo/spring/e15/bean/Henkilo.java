@@ -92,7 +92,7 @@ public class Henkilo {
 
 	@Override
 	public String toString() {
-		return "HenkiloImpl [id=" + id + ", etunimi=" + etunimi + ", sukunimi="
+		return "Henkilo [id=" + id + ", etunimi=" + etunimi + ", sukunimi="
 				+ sukunimi + ", sahkoposti=" + sahkoposti + ", lahiosoite="
 				+ lahiosoite + ", postinumero=" + postinumero
 				+ ", postitoimipaikka=" + postitoimipaikka + "]";
