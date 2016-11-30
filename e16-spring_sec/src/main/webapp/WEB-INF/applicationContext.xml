@@ -49,8 +49,8 @@
 	</bean>
 	
 	<jdbc:embedded-database id="dataSource" type="H2">
-		<jdbc:script location="classpath:create_tables_mysql.sql" />
-		<jdbc:script location="classpath:insert_test_data_mysql.sql" />
+		<jdbc:script location="classpath:create_tables.sql" />
+		<jdbc:script location="classpath:insert_test_data.sql" />
 	</jdbc:embedded-database>
 	
 	<!-- SPRING SECURITY -->
